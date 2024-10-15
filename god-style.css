@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial Black', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.publicdomainpictures.net/pictures/230000/velka/the-throne-of-god.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.god-message {
+    font-size: 4em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}

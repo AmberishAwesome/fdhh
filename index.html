@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Dog Headed Hoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Funky Dog Headed Hoes</h1>
+        </header>
+        <main>
+            <p class="angry-message">You dead wrong and you know it!</p>
+            <button class="interactive-button" onclick="startPoopRain()">Oh really?</button>
+            <p class="piece-of-shit" id="pieceOfShit">You piece of shit!</p>
+            <a class="god-link" href="god-knows.html">God knows</a>
+        </main>
+        <footer>
+            <p>Deal with it.</p>
+        </footer>
+    </div>
+
+    <div class="poop-container" id="poopContainer"></div>
+
+    <script>
+        function startPoopRain() {
+            const poopContainer = document.getElementById('poopContainer');
+            const message = document.getElementById('pieceOfShit');
+            message.style.display = 'none';
+
+            for (let i = 0; i < 20; i++) {
+                const poop = document.createElement('div');
+                poop.classList.add('poop');
+                poop.innerHTML = '💩';
+                poop.style.left = Math.random() * 100 + 'vw';
+                poop.style.animationDelay = Math.random() * 2 + 's';
+                poopContainer.appendChild(poop);
+            }
+
+            setTimeout(() => {
+                message.style.display = 'block';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
